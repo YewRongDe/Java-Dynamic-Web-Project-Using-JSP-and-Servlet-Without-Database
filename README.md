@@ -1,4 +1,4 @@
-# Java-Dynamic-Web-Project-Using-JSP-and-Servlet-Without-Database
+# Java Dynamic Web Project Using JSP and Servlet Without Database
 
 No DB connection needed.
 
