@@ -48,7 +48,6 @@ public class StudentDetails extends HttpServlet {
 			std.add(new Student("Dep 3", "S7", "Siva", 70));
 			std.add(new Student("Dep 3", "S8", "Muria", 20));
 			
-			
 			Map<String, String> studentPass = new HashMap<String, String>();
 			for (int i = 0; i < std.size(); i++) {
 				if (!studentPass.containsKey(std.get(i).getDepartment())) {
@@ -93,21 +92,16 @@ public class StudentDetails extends HttpServlet {
 				}
 			}
 		 
-			
 			// Setting the attribute of the request object
 			// which will be later fetched by a JSP page
-			
-			//Student std = new Student("Dep 1", "S1", "35", "Ahmad");
 			request.setAttribute("data", std);
 			
 			// Creating a RequestDispatcher object to dispatch
-			// the request the request to another resource
+			// the request to another resource specified
+			// the resource is a JSP named, Welcome.jsp
 			RequestDispatcher rd = 
 			request.getRequestDispatcher("Welcome.jsp");
 			
-			// The request will be forwarded to the resource 
-			// specified, here the resource is a JSP named,
-			// "stdlist.jsp"
 			rd.forward(request, response);
 			out.println("</body>");
 			out.println("</html>");
