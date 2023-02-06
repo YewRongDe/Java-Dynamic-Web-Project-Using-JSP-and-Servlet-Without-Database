@@ -8,7 +8,6 @@ public class Student {
 	private String pass;
 	
 	public Student(String department, String studentId, String name, int marks) {
-		super();
 		this.department = department;
 		this.studentId = studentId;
 		this.name = name;
